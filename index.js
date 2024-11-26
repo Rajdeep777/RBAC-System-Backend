@@ -3,7 +3,7 @@ import swagger, { serve } from "swagger-ui-express";
 import apiDocs from "./swagger.json" with { type: "json" };
 import userRouter from "./src/features/user/user.routes.js";
 import connectUsingMongoose from "./config/mongooseConfig.js";
-import resourceRouter from "./src/features/resource/resourse.routes.js";
+import resourceRouter from "./src/features/resource/resource.routes.js";
 import jwtAuth from "./src/middlewares/jwt.middleware.js";
 const server = express();
 const PORT = process.env.PORT || 8000;
