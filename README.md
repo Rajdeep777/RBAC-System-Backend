@@ -112,7 +112,65 @@ The server will start at `http://localhost:8000`.
    - Accessible by `admin`, `moderator`, and `user`.
 
 ---
+## API Documentation for Swagger UI
 
+### Base URL
+`https://rbac-system-backend-e8qu.onrender.com/api-docs/`
+
+#### 1. Register
+**Post** `/api/users/register`
+Click on `try it out` button
+**Request Body**:
+ ```json
+     {
+       "username": "example",
+       "email": "example@example.com",
+       "password": "yourpassword",
+       "role": "user"
+     }
+ ```
+Click on `Execute` button
+![Register User](https://github.com/user-attachments/assets/0ccf5bd3-bba8-4173-a65b-2af0d0c04830)
+
+#### 2. Login
+**Post** `/api/users/register`
+Click on `try it out` button
+**Request Body**:
+ ```json
+     {
+        "email": "example@example.com",
+        "password": "yourpassword"
+     }
+ ```
+Click on `Execute` button
+Then copy the `JWT Token` from Response body
+![Login User](https://github.com/user-attachments/assets/41eeda7b-5508-47cc-b8bd-08de7c635327)
+
+#### 3. Authorization
+Click on `Authorize` button
+Paste the `JWT Token` in `Value`
+Click on `Authorize`
+![Authorization](https://github.com/user-attachments/assets/5a0973f8-9b97-47ca-8806-6300b8d27bbd)
+
+#### 4. Admin Resource
+**GET** `/api/resources/admin`
+Click on `try it out` button
+Click on `Execute` button
+![Admin Resource](https://github.com/user-attachments/assets/d1a5a4aa-bb81-4253-8f97-9577aff156e5)
+
+#### 5. Moderator Resource
+**GET** `/api/resources/moderator`
+Click on `try it out` button
+Click on `Execute` button
+![Moderator Resource](https://github.com/user-attachments/assets/b46990d5-f7d0-4753-8f08-bad46523aefb)
+
+#### 6. User Resource
+**GET** `/api/resources/user`
+Click on `try it out` button
+Click on `Execute` button
+![User Resource](https://github.com/user-attachments/assets/e0184c3b-b21f-4f65-bc10-81a733dc8fe5)
+
+---
 ## Folder Structure
 ```
 RBAC-System-Backend/
