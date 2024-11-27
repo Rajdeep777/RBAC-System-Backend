@@ -70,8 +70,11 @@ The server will start at `http://localhost:8000`.
      ```
    - **Response**:
      ```json
-     {
-       "token": "jwt_token_here"
+      {
+       "username": "example",
+       "email": "example@example.com",
+       "password": "hashedpassword",
+       "role": "user"
      }
      ```
 
